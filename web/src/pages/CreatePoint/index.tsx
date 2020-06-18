@@ -55,7 +55,7 @@ const CreatePoint = () => {
         })
     }, []);
 
-    useEffect(() => { //aqui ta ok
+    useEffect(() => { 
         api.get('items').then(response => {
             setItems(response.data);
         })
